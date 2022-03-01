@@ -1,94 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 <?php
 
-    $age = 21;
+$age = 21;
 
-    if ($age<=13) {
+if ($age<=13) {
 
-        echo "Child.";
+    echo "Child.";
 
-    } elseif ($age>13 && $age<19) {
+} elseif ($age>13 && $age<19) {
 
-        echo "Teenager";
+    echo "Teenager";
 
-    } else {
+} else {
 
-        echo "Adult";
+    echo "Adult";
 
 }
 $i = 1;
 
-    while ($i < 7) {
+while ($i < 7) {
 
-        echo "The value is $i <br />";
+    echo "The value is $i <br />";
 
-        $i++;
-      
-      }
+    $i++;
+  
+  }
 $i = 5;
 
-    do {
+do {
 
-        echo "The number is " . $i . "<br/>";
+    echo "The number is " . $i . "<br/>";
 
-        $i++;
+    $i++;
 
-    } while($i <= 7);
+} while($i <= 7);
 $names = array("John", "David", "Amy");
 
-    foreach ($names as $name) {
+foreach ($names as $name) {
 
-        echo $name.'<br />';
+    echo $name.'<br />';
 
-    }
+}
 $today = 'Tue';
 
-    switch ($today) {
+switch ($today) {
 
-        case "Mon":
+    case "Mon":
 
-            echo "Today is Monday.";
+        echo "Today is Monday.";
 
-            break;
+        break;
 
-        case "Tue":
+    case "Tue":
 
-            echo "Today is Tuesday.";
+        echo "Today is Tuesday.";
 
-            break;
+        break;
 
-        case "Wed":
+    case "Wed":
 
-            echo "Today is Wednesday.";
+        echo "Today is Wednesday.";
 
-            break;
+        break;
 
-        case "Thu":
+    case "Thu":
 
-            echo "Today is Thursday.";
+        echo "Today is Thursday.";
 
-            break;
+        break;
 
-        case "Fri":
+    case "Fri":
 
-             echo "Today is Friday.";
+         echo "Today is Friday.";
 
-             break;
+         break;
 
-        case "Sat":
+    case "Sat":
 
-             echo "Today is Saturday.";
+         echo "Today is Saturday.";
 
-             break;
+         break;
 
-        case "Sun":
+    case "Sun":
 
-             echo "Today is Sunday.";
+         echo "Today is Sunday.";
 
-             break;
+         break;
 
-        default:
+    default:
 
-             echo "Invalid day.";
+         echo "Invalid day.";
 
-    }
+}
 ?>
+</body>
+</html>
+
+
