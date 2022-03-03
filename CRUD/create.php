@@ -1,5 +1,7 @@
 
 <?php
+
+  $firstName = $lastName = $email = $gender = $password = "";
   include 'config.php';
   if(isset($_POST['submit'])){
     $firstName = $_POST['firstname'];
@@ -9,7 +11,7 @@
     $gender = $_POST['gender'];
   }
 
-  $sql = "INSERT INTO 'users' ('firstname','lastname','email','password','gender')  VALUES ('$firstName','$lastName','$email','$password','$gender')";
+  $sql = "INSERT INTO users (firstname,lastname,email,password,gender)  VALUES ('$firstName','$lastName','$email','$password','$gender');";
 
   $result = $conn->query($sql);
   if($result == TRUE){
@@ -31,5 +33,22 @@
 </head>
 <body>
   <h1>Lorem ipsum dolor sit.</h1>
+  <form action="" method="POST">
+    <fieldset>
+      <legend>Personal information</legend>
+      First Name: <br>
+      <input type="text" name="firstname"><br>
+      Last Name: <br>
+      <input type="text" name="lastname"><br>
+      Password: <br>
+      <input type="password" name="password"><br>
+      Email: <br>
+      <input type="email" name="email"><br>
+      Gender: <br>
+      <input type="radio" name="gender" value="male" >Male
+      <input type="radio" name="gender" value="female" >Female <br>
+      <input type="submit" value="submit">
+    </fieldset>
+  </form>
 </body>
 </html>
