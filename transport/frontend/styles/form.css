@@ -1,0 +1,70 @@
+
+body{
+  width: 100vw;
+  /* background: #40B608; */
+  height: 100vh;
+  /* overflow: scroll; */
+  
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.bg{
+background-image: url('https://www.sustainable-bus.com/wp-content/uploads/2019/12/scania-bus4.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.bg-img img{
+  width: 100%;
+  object-fit: contain;
+}
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  
+}
+
+.form-group{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  /* width: 240px; */
+  width: auto;
+  background: #40B608;
+  /* height: 240px; */
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.form-control{
+  margin: 0.6rem 1.6rem;
+  position: relative;
+}
+
+.form-control input{
+  text-align: left;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+  border:none;
+  border-bottom: 1px solid #222;
+  box-shadow: -6px 4px 8px -1px rgba(0,0,0,0.4);
+-webkit-box-shadow: -6px 2px 8px -1px rgba(0,0,0,0.4);
+-moz-box-shadow: -6px 4px 2px -1px rgba(0,0,0,0.4);
+font-size: 1.4rem;
+text-transform: capitalize;
+margin-left: 0.7rem;
+}
+
+.form-control button{
+  /* position: absolute; */
+  margin: 10% 6rem;
+}
