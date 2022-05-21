@@ -4,6 +4,8 @@ body{
   background: #40B608;
   height: 100vh;
   overflow: scroll;
+  margin: 0;
+  padding: 0;
   
 }
 
@@ -20,14 +22,13 @@ body{
 
 .nav{
   display: flex;
-  width: 100vw;
-  align-items: center;
+  width: 100%;
   justify-content: space-between;
   height: auto;
   padding: 0.5rem 1.4rem;
   background: #FFFFFF;
-  /* margin: 1rem auto; */
-  margin-top: 0;
+  left: auto;
+  margin-right: auto;
 }
 
 .nav-center{
