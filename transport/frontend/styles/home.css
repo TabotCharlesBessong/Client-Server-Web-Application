@@ -49,6 +49,11 @@ body{
   text-transform: capitalize;
 }
 
+.nav-links li:hover,
+.nav-links li:focus{
+  color: #CB0808;
+}
+
 
 .nav-right{
   width: 4rem;
