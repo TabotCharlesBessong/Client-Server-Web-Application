@@ -1,22 +1,23 @@
 
 
-alert('Hello wordl')
-const labelPie = ['Douala','Yaounde','Buea','Limbe','Bamenda']
-const dataPie = [123,235,46,190,37]
-const colorPie = ['#49A9EA','#8718a3','#67a812','#2719aa','0f1113']
+// alert('Hello wordl')
+let labelPie = ['Douala','Yaounde','Buea','Limbe','Bamenda']
+let dataPie = [123,235,46,190,37]
+let colorPie = ['#49A9EA','#8718a3','#67a812','#2719aa','0f1113']
 
+let pie = document.querySelector('#piechart')
+let comparison = document.querySelector('#piechart').getContext('2d')
 
-const comparison = document.querySelector('#piechart').getContext('2d')
+console.log(comparison,'compare')
+console.log(pie,'pie');
 
-console.log(comparison)
-
-const pieChart = new Chart(comparison, {
-  type:'Tickets Sales',
+let pieChart = new Chart(comparison, {
+  type:'pie',
   data:{
     labels:labelPie,
     datasets:[{
       data:dataPie,
-      bgColor:colorPie
+      backgroundColor:colorPie
     }]
   },
   options:{
@@ -28,27 +29,32 @@ const pieChart = new Chart(comparison, {
 } )
 
 
-const labelHist = ['January','February','March','April','June','July','August','September']
-const dataHist = [45,56,34,51,61,23,82,12,93]
-const colorHist = ['#2719aa','#49A9EA','#67a812','#87acb1','0f1113','#8718a3','#1e8391','#ffa500']
+let labelHist = ['January','February','March','April','June','July','August','September']
+let dataHist = [45,56,34,51,61,23,82,12,93]
+let colorHist = ['#2719aa','#49A9EA','#67a812','#87acb1','0f1113','#8718a3','#1e8391','#ffa500']
 
-const stats = document.querySelector('#histogram').getContext('2d')
+let stats = document.querySelector('#histogram').getContext('2d')
 
-const hist = new Chart(stats, {
-  type:'Tickets Sales',
+let hist = new Chart(stats, {
+  type:'bar',
   data:{
     labels:labelHist,
     datasets:[{
-      data:dataHlabelHist,
-      bgColor:colorHlabelHist
+      data:dataHist,
+      backgroundColor:colorHist
     }]
   },
   options:{
     title:{
       text:"This is the sales statistics for the tickets",
       display:true
+    },
+    legend:{
+      display:true
     }
   }
 } )
 
-console.log(stats)
+let hits = document.querySelector('#histogram')
+console.log(hist,'hist');
+console.log(stats,'starts')

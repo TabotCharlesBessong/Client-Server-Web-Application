@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../styles/specialStyles.css">
   <link rel="stylesheet" href="../styles//mediaQuery.css">
   <link rel="stylesheet" href="../styles/chats.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </head>
 <body>
@@ -21,9 +22,7 @@
       <div class="nav-center">
         <ul class="nav-links" >
           <li tabindex="1"> <a href="./index.html"> home </a> </li>
-          <li tabindex="1">create</li>
-          <li tabindex="1"> <a href="./assignBus.html">assign</a> </li>
-          <li tabindex="1">backlog</li>
+          
           <li> <a href="./createSubAdmin.html"> create sub-admin</a> </li>
           <li> <a href="./assignBus.html">assign buses</a> </li>
           <li> <a href="./backlog.html"> backlog </a> </li>
@@ -40,19 +39,27 @@
 
   <main class="main-container">
     <div class="charts row">
-      <div class="chart pie">
+      <div class="chart col-6 pie">
         <canvas id="piechart" width="500" height="400"></canvas>
       </div>
-      <div class="chart hist">
+      <div class="chart col-6 hist">
         <canvas id="histogram" width="500" height="400"></canvas>
       </div>
       </div>
     <div class="notifications">
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li> <a href="#"> <div class="notif">
+          <i class="fas fa-facebook"></i> <p class="para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque cum voluptates iste! </p> 
+        </div> </a> </li>
+        <li> <a href="#"> <div class="notif">
+          <i class="fas fa-facebook"></i> <p class="para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque cum voluptates iste! </p> 
+        </div> </a> </li>
+        <li> <a href="#"> <div class="notif">
+          <i class="fas fa-facebook"></i> <p class="para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque cum voluptates iste! </p> 
+        </div> </a> </li>
+        <li> <a href="#"> <div class="notif">
+          <i class="fas fa-facebook"></i> <p class="para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque cum voluptates iste! </p> 
+        </div> </a> </li>
       </ul>
     </div>
   </main>
