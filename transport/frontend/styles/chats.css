@@ -1,0 +1,39 @@
+
+.main-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.charts{
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: orange;
+  /* width: 100%;
+  max-width: 750px; */
+}
+
+.notifications{
+  flex: 1;
+  color: red;
+}
+
+.chart {
+  text-align: center;
+  margin: auto;
+}
+
+.row {
+  margin-bottom: 150px;
+}
+.b{
+  color: #49A9EA;
+  color: #8718a3;
+  color: #67a812;
+  color: #2719aa;
+  color: #0f1113;
+  color: #ffa500;
+  color: #1e8391;
+}

@@ -42,7 +42,7 @@ background-image: url('https://www.sustainable-bus.com/wp-content/uploads/2019/1
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   /* width: 240px; */
   width: 80%;
   height: 80%;
@@ -50,13 +50,12 @@ background-image: url('https://www.sustainable-bus.com/wp-content/uploads/2019/1
   /* height: 240px; */
   padding: 1.5rem;
   border-radius: 1rem;
-<<<<<<< HEAD
+
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6);
-=======
+
   box-shadow: -16px 9px 8px -1px rgba(0,0,0,0.4);
 -webkit-box-shadow: -16px 9px 8px -1px rgba(0,0,0,0.4);
 -moz-box-shadow: -16px 4px 9px -1px rgba(0,0,0,0.4);
->>>>>>> 95ee2dc572b4fe5ab107130c068fb4b4416248e2
 }
 
 .form-control{

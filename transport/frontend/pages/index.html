@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="../styles/home.css">
   <link rel="stylesheet" href="../styles/specialStyles.css">
   <link rel="stylesheet" href="../styles//mediaQuery.css">
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="../styles/chats.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </head>
 <body>
   <header class="header">
@@ -19,43 +20,42 @@
       </div>
       <div class="nav-center">
         <ul class="nav-links" >
-          <li tabindex="1">home</li>
+          <li tabindex="1"> <a href="./index.html"> home </a> </li>
           <li tabindex="1">create</li>
           <li tabindex="1"> <a href="./assignBus.html">assign</a> </li>
           <li tabindex="1">backlog</li>
-          <li>home</li>
           <li> <a href="./createSubAdmin.html"> create sub-admin</a> </li>
           <li> <a href="./assignBus.html">assign buses</a> </li>
-          <li>backlog</li>
+          <li> <a href="./backlog.html"> backlog </a> </li>
         </ul>
       </div>
       <div class="nav-right">
         <a href="./login.html">
-          <img src="../assets/user.png" alt="">
+          <img src="../assets/avatar.jfif" alt="">
           
         </a>
       </div>
     </nav>
   </header>
 
-  <main>
-    <div class="main-container">
-      <div class="pie-chart">
-         <img src="../assets/pie-chart.png" alt="">
-       </div>
-       <div class="histogram">
-         <img src="../assets/histogram.png" alt="">
-       </div>
-       <div class="notification">
-          <ul>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-          </ul>
-       </div>
+  <main class="main-container">
+    <div class="charts row">
+      <div class="chart pie">
+        <canvas id="piechart" width="500" height="400"></canvas>
       </div>
-    
+      <div class="chart hist">
+        <canvas id="histogram" width="500" height="400"></canvas>
+      </div>
+      </div>
+    <div class="notifications">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
   </main>
+  <script src="../js/charts.js"></script>
 </body>
 </html>
