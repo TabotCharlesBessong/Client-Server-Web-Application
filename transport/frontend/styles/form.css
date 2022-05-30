@@ -42,7 +42,7 @@ background-image: url('https://www.sustainable-bus.com/wp-content/uploads/2019/1
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   /* width: 240px; */
   width: 80%;
   height: 80%;
@@ -88,6 +88,11 @@ margin-left: 0.7rem;
 .form-control input{
   padding: 0.2rem 0.3rem;
 
+}
+
+.form-control label{
+  margin-right: 0.3rem;
+  text-transform: capitalize;
 }
 
 .form-control button{

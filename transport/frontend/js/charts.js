@@ -58,3 +58,30 @@ let hist = new Chart(stats, {
 let hits = document.querySelector('#histogram')
 console.log(hist,'hist');
 console.log(stats,'starts')
+
+let labelHist1 = ['January','February','March','April','June','July','August','September']
+let dataHist1 = [45,56,34,51,61,23,82,12,93]
+let colorHist1 = ['#49A9EA','#1e8391','#ffa500','#67a812','#87acb1','0f1113','#8718a3','#2719aa']
+
+let stats1 = document.querySelector('#histogram1').getContext('2d')
+
+console.log(stats1)
+let hist1 = new Chart(stats1, {
+  type:'bar',
+  data:{
+    labels:labelHist1,
+    datasets:[{
+      data:dataHist1,
+      backgroundColor:colorHist1
+    }]
+  },
+  options:{
+    title:{
+      text:"This is the sales statistics for the tickets for Douala Agency",
+      display:true
+    },
+    legend:{
+      display:true
+    }
+  }
+} )
