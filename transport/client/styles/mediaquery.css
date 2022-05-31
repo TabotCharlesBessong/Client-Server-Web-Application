@@ -1,0 +1,38 @@
+@media(max-width: 1000px){
+    .main > div{
+        width: 45%;
+    }
+}
+
+@media(max-width: 675px){
+    .main > div{
+        width: 90%;
+    }
+}
+
+@media  (max-width: 700px) {
+    footer{
+        flex-direction: column;
+    }
+    footer > div{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media(max-width: 1300px){
+    .main-content{
+        background-size: fill;
+    }
+}
+
+@media(max-width: 662px){
+    .menu-item{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+}
+
+
