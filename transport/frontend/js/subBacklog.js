@@ -1,36 +1,20 @@
 
-let data = [
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"}
+const busInfo = [
+    {busID:278,origin:'Buea',destination:'Yaounde',seats:34,status:'left'},
+    {busID:278,origin:'Buea',destination:'Yaounde',seats:34,status:'loading'},
+    {busID:278,origin:'Buea',destination:'Yaounde',seats:34,status:'left'},
+    {busID:278,origin:'Buea',destination:'Yaounde',seats:34,status:'travelling'},
+    {busID:278,origin:'Buea',destination:'Yaounde',seats:34,status:'left'},
+    {busID:278,origin:'Buea',destination:'Yaounde',seats:34,status:'left'},
+    {busID:278,origin:'Buea',destination:'Yaounde',seats:34,status:'left'},
+    {busID:278,origin:'Buea',destination:'Yaounde',seats:34,status:'loading'},
+    {busID:278,origin:'Buea',destination:'Yaounde',seats:34,status:'left'},
+    {busID:278,origin:'Buea',destination:'Yaounde',seats:34,status:'travelling'},
+    {busID:278,origin:'Buea',destination:'Yaounde',seats:34,status:'left'},
+    {busID:278,origin:'Buea',destination:'Yaounde',seats:34,status:'left'},
 ];
 
-let pasData = [
+let mailData = [
     {mailID: 666, package:'Chair', Sname: "Tabot Charles",Rname: "I_Am_Anonymous", origin: "Kuwait", destination: "Dakar"},
     {mailID: 666, package:'Chair', Sname: "Tabot Charles",Rname: "I_Am_Anonymous", origin: "Kuwait", destination: "Dakar"},
     {mailID: 666, package:'Chair', Sname: "Tabot Charles",Rname: "I_Am_Anonymous", origin: "Kuwait", destination: "Dakar"},
@@ -47,81 +31,18 @@ let pasData = [
 ]
 
 let jData = [
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"},
-    {busID: 345, origin: "Bhutan", destination: "Bangkog", pasCount: 61, status: "Loading"}
+    {passId:23,NIC:'lt3425du7621',name:'Bebongchu Yannick',origin:'Garoua',destination:'Ouesso'},
+    {passId:23,NIC:'lt3425du7621',name:'Bebongchu Yannick',origin:'Garoua',destination:'Ouesso'},
+    {passId:23,NIC:'lt3425du7621',name:'Bebongchu Yannick',origin:'Garoua',destination:'Ouesso'},
+    {passId:23,NIC:'lt3425du7621',name:'Bebongchu Yannick',origin:'Garoua',destination:'Ouesso'},
+    {passId:23,NIC:'lt3425du7621',name:'Bebongchu Yannick',origin:'Garoua',destination:'Ouesso'},
+    {passId:23,NIC:'lt3425du7621',name:'Bebongchu Yannick',origin:'Garoua',destination:'Ouesso'},
+    {passId:23,NIC:'lt3425du7621',name:'Bebongchu Yannick',origin:'Garoua',destination:'Ouesso'},
+    {passId:23,NIC:'lt3425du7621',name:'Bebongchu Yannick',origin:'Garoua',destination:'Ouesso'},
+    {passId:23,NIC:'lt3425du7621',name:'Bebongchu Yannick',origin:'Garoua',destination:'Ouesso'},
+    {passId:23,NIC:'lt3425du7621',name:'Bebongchu Yannick',origin:'Garoua',destination:'Ouesso'},
+    {passId:23,NIC:'lt3425du7621',name:'Bebongchu Yannick',origin:'Garoua',destination:'Ouesso'},
+    {passId:23,NIC:'lt3425du7621',name:'Bebongchu Yannick',origin:'Garoua',destination:'Ouesso'},
 ]
 
 
@@ -139,20 +60,20 @@ let jbool = false;
 
 
 
-const populateAgencyTable =() => {
+const populatePassengerTable =() => {
     let rowHeader = table.insertRow();
     let th1 = rowHeader.insertCell();
-    th1.textContent = "Agency ID"
+    th1.textContent = "Passenger ID"
     let th2 = rowHeader.insertCell();
-    th2.textContent = "Agency"
+    th2.textContent = "Natian ID No"
     let th3 = rowHeader.insertCell();
-    th3.textContent = "Sub Admin"
+    th3.textContent = "Full Name"
     let th4 = rowHeader.insertCell();
-    th4.textContent = "Email"
+    th4.textContent = "Origin"
     let th5 = rowHeader.insertCell();
-    th5.textContent = "Status"
-    rowHeader.className = "table-header";
-    for(let agency of data){
+    th5.textContent = "Destination"
+    // rowHeader.className = "table-header";
+    for(let agency of jData){
         let row = table.insertRow();
         let cellOne = row.insertCell();
         let cellTwo = row.insertCell();
@@ -160,11 +81,11 @@ const populateAgencyTable =() => {
         let cellFour = row.insertCell();
         let cellFive = row.insertCell();
         cellFive.id ="cell-five";
-        cellOne.textContent = agency.agencyId
-        cellTwo.textContent = agency.agency
-        cellThree.textContent = agency.subAdmin
-        cellFour.textContent = agency.email
-        cellFive.textContent = agency.status
+        cellOne.textContent = agency.passId
+        cellTwo.textContent = agency.NIC
+        cellThree.textContent = agency.name
+        cellFour.textContent = agency.origin
+        cellFive.textContent = agency.destination
     }
     agencyTable.append(table);
 }
@@ -184,7 +105,7 @@ const populateMailTable = () => {
     let th6 = rowHeader.insertCell();
     th6.textContent = "Destination"
     rowHeader.className = "table-header";
-    for(let passenger of pasData){
+    for(let passenger of mailData){
         let row = pas.insertRow();
         let cellOne = row.insertCell();
         let cellTwo = row.insertCell();
@@ -207,15 +128,15 @@ const populateJourneyTable = () => {
     let th1 = rowHeader.insertCell();
     th1.textContent = "Bus ID"
     let th2 = rowHeader.insertCell();
-    th2.textContent = "Origin"
+    th2.textContent = "Number Of Seats"
     let th3 = rowHeader.insertCell();
-    th3.textContent = "Destination"
+    th3.textContent = "Origin"
     let th4 = rowHeader.insertCell();
-    th4.textContent = "Pas Count"
-    let th5 = rowHeader.insertCell();
-    th5.textContent = "Status"
+    th4.textContent = "Destination"
+    // let th5 = rowHeader.insertCell();
+    // th5.textContent = "Status"
     rowHeader.className = "table-header";
-    for(let jour of jData){
+    for(let jour of busInfo){
         let row = journey.insertRow();
         let cellOne = row.insertCell();
         let cellTwo = row.insertCell();
@@ -223,10 +144,10 @@ const populateJourneyTable = () => {
         let cellFour = row.insertCell();
         let cellFive = row.insertCell();
         cellOne.textContent = jour.busID
-        cellTwo.textContent = jour.origin
-        cellThree.textContent = jour.destination
-        cellFour.textContent = jour.pasCount
-        cellFive.textContent = jour.status
+        cellTwo.textContent = jour.seats
+        cellThree.textContent = jour.origin
+        cellFour.textContent = jour.destination
+        // cellFive.textContent = jour.status
     }
     journeyTable.append(journey);
 }
@@ -260,7 +181,7 @@ const toggleJourney = () => {
 
 
 const loader = () => {
-    populateAgencyTable();
+    populatePassengerTable();
     populateMailTable();
     populateJourneyTable();
 }
