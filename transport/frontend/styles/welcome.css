@@ -1,0 +1,64 @@
+
+body{
+  background-image: url('../assets/bus.jpg');
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.welcome-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem;
+}
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 5rem auto;
+  background: #fff;
+  border-radius: 2rem;
+  /* box-shadow: 6px 6px 6px -2px rgba(0, 0, 0, 0.6)  ; */
+  width: 45rem;
+  opacity: 0.85;
+}
+
+.text{
+  margin-bottom: 2rem;
+  text-align: center;
+  
+}
+
+.text h2{
+  font-size: 2.4rem;
+  color: green;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 6%;
+}
+
+.links a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0.6rem;
+}
+
+.links a h2{
+  text-transform: capitalize;
+  margin-right: 0.45rem;
+}
+
+
+
