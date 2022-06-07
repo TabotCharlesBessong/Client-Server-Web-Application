@@ -16,8 +16,18 @@
             </div>
             <div class="air"></div>
             <div class="menu">
-                <a href="./homepage.html">Home</a>
-                <a href="./index.html">Journeys</a>
+                <a href="./homepage.html" class="menu-item">Home</a>
+                <a href="./homepage.html" class="menu-item">Journeys</a>
+                <a href="#" onclick="showDropdownMenu()" class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <div class="dropdown" id="drop">
+                    <a href="#" onclick="closeDropdownMenu()">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <a href="./homepage.html">Home</a>
+                    <a href="./homepage.html">Journeys</a>
+                </div>
             </div>
         </div>
         <div class="main-content">

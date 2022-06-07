@@ -20,7 +20,21 @@ const closeDropdownMenu = () => {
     }
 }
 
-
 const getStatus = () => {
     return dropdownStatus = !dropdownStatus
+}
+
+let colors = ['green', 'red', 'yellow']
+let seatHolder = document.getElementById('seatHolder')
+const fillSeats = () => {
+    for(let i=0; i<20; i++){
+        let val = document.createElement('h1')
+        val.textContent = `${i+1}`
+        let colorState = Math.floor(Math.random() * 3)
+        let seat = document.createElement('div')
+        seat.append(val)
+        seat.style.backgroundColor = colors[colorState]
+        seatHolder.appendChild(seat)
+        colorState++
+    }
 }

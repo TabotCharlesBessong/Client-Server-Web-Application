@@ -35,4 +35,16 @@
     }
 }
 
+@media (max-width: 795px){
+    .seat-header{
+        flex-direction: column;
+        margin: auto;
+    }
+    .seat-header > div{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
 
