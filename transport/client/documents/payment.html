@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="../styles/home.css">
     <link rel="stylesheet" type="text/css" href="../styles/mediaquery.css">
+    <link rel="stylesheet" type="text/css" href="../styles/selection.css">
 </head>
 <body>
     <div class="container">
@@ -30,37 +31,26 @@
                 </div>
             </div>
         </div>
-        <div class="main-content">
-            <div class="text-content">
-                <h1>Welcome to SupLex, your number one booking service</h1>
-                <h3>Click below in order to view available journeys</h3>
-                <button><a href="./index.html">Go to journeys</a></button>
+        <div class="pay-here">
+            <div class="title">
+                <h1>Pay For Ticket</h1>
             </div>
-        </div>  
-        <div class="footer">
-            <h1>SupLex</h1>
-            <footer>
-                <div class="employees">
-                    <h1>Employees</h1>
-                    <a href="#">Yimnai Nerus</a>
-                    <a href="#">Tabot Charles</a>
-                    <a href="#">Bebongchu Yannick</a>
-                    <a href="#">Wilfred Tagha</a>
-                </div>
-                <div class="socials">
-                    <h1>Social Media</h1>
-                    <a href="#">facebook.com</a>
-                    <a href="#">linkedin.com</a>
-                    <a href="#">instagram.com</a>
-                </div>
-                <div class="others">
-                    <h1>Other Products</h1>
-                    <a href="#">Bongalo</a>
-                    <a href="#">Sokoto</a>
-                </div>
-            </footer>
+            <form>
+                <input type="text" id="name" placeholder="@johndoe">
+                <select >
+                    <option value="0">Select Operator</option>
+                    <option value="1">MTN</option>
+                    <option value="2">ORANGE</option>
+                </select>
+                <input type="text" id="telephone" placeholder="@telephone">
+                <input type="text" id="sid" placeholder="@id-card-num">
+                <input type="text" id="origin" placeholder="@origin">
+                <input type="text" id="destination" placeholder="@destination">
+                <input type="text" id="price" placeholder="@price">
+                <button onclick="ticketFiller()" id="pay-btn" type="button">Pay</button>
+            </form>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/b849139045.js" crossorigin="anonymous"></script>
 </body>
+<script src="../js/dropdown.js"></script>
 </html>

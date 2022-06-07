@@ -100,6 +100,9 @@ const populator = () => {
         let bottom = document.createElement('div')
         bottom.className = 'bottom'
         btn = document.createElement('button')
+        btn.addEventListener('click', function(){
+            window.location = 'http://127.0.0.1:5500/transport/client/documents/seat-selection.html'
+        })
         btn.textContent = 'BOOK'
         bottom.appendChild(btn)
         mainChild.appendChild(header)
