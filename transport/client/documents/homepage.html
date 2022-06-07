@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="../styles/home.css">
+    <link rel="stylesheet" type="text/css" href="../styles/mediaquery.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="brand">
+                <label>SupLex</label>
+            </div>
+            <div class="air"></div>
+            <div class="menu">
+                <a href="./homepage.html" class="menu-item">Home</a>
+                <a href="./homepage.html" class="menu-item">Journeys</a>
+                <a href="#" onclick="showDropdownMenu()" class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <div class="dropdown" id="drop">
+                    <a href="#" onclick="closeDropdownMenu()">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <a href="./homepage.html">Home</a>
+                    <a href="./homepage.html">Journeys</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="text-content">
+                <h1>Welcome to SupLex, your number one booking service</h1>
+                <h3>Click below in order to view available journeys</h3>
+                <button><a href="./index.html">Go to journeys</a></button>
+            </div>
+        </div>  
+        <div class="footer">
+            <h1>SupLex</h1>
+            <footer>
+                <div class="employees">
+                    <h1>Employees</h1>
+                    <a href="#">Yimnai Nerus</a>
+                    <a href="#">Tabot Charles</a>
+                    <a href="#">Bebongchu Yannick</a>
+                    <a href="#">Wilfred Tagha</a>
+                </div>
+                <div class="socials">
+                    <h1>Social Media</h1>
+                    <a href="#">facebook.com</a>
+                    <a href="#">linkedin.com</a>
+                    <a href="#">instagram.com</a>
+                </div>
+                <div class="others">
+                    <h1>Other Products</h1>
+                    <a href="#">Bongalo</a>
+                    <a href="#">Sokoto</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/b849139045.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -36,20 +36,20 @@
   </header>
 
   <div class="form">
-    <form action="" class="form-group">
+    <form action="../PHP/login.php" class="form-group" method="POST">
       <div class="form-control">
         <label for="name">Name</label>
-        <input type="text" name="name" placeholder="admin name" >
+        <input type="text" name="name" placeholder="Admin name" >
       </div>
       <div class="form-control">
         <label for="password">Password</label>
-        <input type="password" name="password" placeholder="admin password" >
+        <input type="password" name="password" placeholder="Admin password" >
       </div>
       <a href="#">
         <h2>wrong login credentials</h2>
       </a>
       <div class="form-control">
-        <button class="btn lg-btn" type="submit" >login</button>
+        <button name="submit" class="btn lg-btn" type="submit" >login</button>
       </div>
     </form>
   </div>
