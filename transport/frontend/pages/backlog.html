@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backlog</title>
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/specialStyles.css">
+    <link rel="stylesheet" href="../styles/mediaQuery.css">
+    <link rel="stylesheet" href="../styles/backlog.css">
+</head>
+<body onload="loader()">
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+              <div class="nav-left">
+                <h2 class="logo" >SupLex</h2>
+              </div>
+              <div class="nav-center">
+                <ul class="nav-links" >
+                  <li tabindex="1">home</li>
+                  <li tabindex="1">create</li>
+                  <li tabindex="1"> <a href="./assignBus.html">assign</a> </li>
+                  <li tabindex="1">backlog</li>
+                </ul>
+              </div>
+              <div class="nav-right">
+                  <div class="drop-me">
+                    <a tabindex="1">
+                      <img src="../assets/user.png" alt="">
+                    </a>
+                    <div class="dropdown">
+                      <ul class="dropdown-menu-links" >
+                        <li tabindex="1"><a href="./index.html">Home</a></li>
+                        <li tabindex="1"><a href="./createSubAdmin.html">Create</a></li>
+                        <li tabindex="1"> <a href="./assignBus.html">assign</a> </li>
+                        <li tabindex="1"><a href="./backlog.html">Backlog</a></li>
+                        <li tabindex="1"><a href="./login.html">Logout</a></li> 
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+            </nav>
+          </header>
+          <div class="title">
+            <h1>Backlog</h1>
+        </div>
+          <div class="backlog-content">
+            <div class="agency">
+                <div class="btn">
+                    <button id="btn-primary" onclick="hideTable()">Agencies</button>
+                </div>
+                <div class="agency-table" id="agencyTable">
+                   <!-- Insert Table Here from Javscript -->
+                </div>
+                <!-- <hr> -->
+            </div>
+            <div class="passenger-info">
+                <div class="btn">
+                    <button id="btn-primary" onclick="hidePassenger()">Passenger Info</button>
+                </div>
+                <div class="agency-table" id="pTable">
+                   <!-- Insert Table Here from Javscript -->
+                </div>
+                <!-- <hr> -->
+            </div>
+            <div class="journey-info">
+                <div class="btn">
+                    <button id="btn-primary" onclick="hideJourney()">Journey Info</button>
+                </div>
+                <div class="agency-table" id="jTable">
+                   <!-- Insert Table Here from Javscript -->
+                </div>
+                <!-- <hr> -->
+            </div>
+            </div>
+          </div>
+    </div>
+  <script src="../javascript/backlog.js"></script>
+</body>
+</html>

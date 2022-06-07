@@ -1,0 +1,15 @@
+
+@media screen and (max-width:700px) {
+  .nav-links{
+    display: none;
+  }
+
+  .nav .nav-right > .drop-me > a:focus + .dropdown{
+      display: block;
+  }
+
+  .nav .nav-right > .drop-me > .dropdown a{
+     cursor: pointer;
+
+  }
+}

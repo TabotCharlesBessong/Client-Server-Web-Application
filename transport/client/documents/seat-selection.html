@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seat selection</title>
+    <link rel="stylesheet" type="text/css" href="../styles/home.css">
+    <link rel="stylesheet" type="text/css" href="../styles/mediaquery.css">
+    <link rel="stylesheet" type="text/css" href="../styles/selection.css">
+</head>
+<body onload="fillSeats()">
+    <div class="container">
+        <div class="navbar">
+            <div class="brand">
+                <label>SupLex</label>
+            </div>
+            <div class="air"></div>
+            <div class="menu">
+                <a href="./homepage.html" class="menu-item">Home</a>
+                <a href="./homepage.html" class="menu-item">Journeys</a>
+                <a href="#" onclick="showDropdownMenu()" class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <div class="dropdown" id="drop">
+                    <a href="#" onclick="closeDropdownMenu()">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <a href="./homepage.html">Home</a>
+                    <a href="./homepage.html">Journeys</a>
+                </div>
+            </div>
+        </div>
+        <div class="seater">
+            <div class="seat-header">
+                <div class="bus-holder box">
+                    <img src="../images/bus.jpeg" alt="bus">
+                </div>
+                <div class="name">
+                    <h1>SupLex</h1>
+                </div>
+                <div class="place">
+                    <h2>Origin: Buea</h1>
+                    <h2>Destination: Kumba</h1>
+                </div>
+            </div>
+            <div class="seats" id="seatHolder">
+
+            </div>
+        </div>
+        <div class="key">
+            <div class="green"></div>
+            <div class="red"></div>
+            <div class="yellow"></div>
+        </div>
+        <div class="guide">
+            <div class="one">
+                <h1>Available</h1>
+            </div>
+            <div class="two">
+                <h1>Booked</h1>
+            </div>
+            <div class="three">
+                <h1>Reserved</h1>
+            </div>
+        </div>
+    </div>
+    <script src="../js/dropdown.js"></script>
+    <script src="https://kit.fontawesome.com/b849139045.js" crossorigin="anonymous"></script>
+</body>
+</html>
