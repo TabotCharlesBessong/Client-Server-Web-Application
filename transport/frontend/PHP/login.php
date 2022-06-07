@@ -1,25 +1,14 @@
 <?php
 
-
-
-// $gender=$_POST['gender'];
-// $address=$_POST['address'];
-
-
-	// $sql= "INSERT INTO users(userFirstName,userLastName,usergender,useraddress) VALUES ('$first','$last','$gender','$address');";
-	// $result=mysqli_query($conn,$sql);
-
-	// header("Location: index.php?Signup=successful");//this takes us back to our index file.
-
-
     if (isset(($_POST['submit']))) {
-
+        
     include_once 'connection.php';
 
     $name=$_POST['name'];
     $pwd=$_POST['password'];
 
     if (empty($name) || empty($pwd)) {
+        echo '<script>alert("Welcome to Geeks for Geeks")</script>';
         header("Location: ../pages/login.html?Signup=empty");
         exit();
         }
@@ -35,9 +24,7 @@ if (!mysqli_stmt_prepare($pst, $sql)) {
     echo 'MYSQL Connection failed';
 }
 else{
-    //bind parameters to the placeholder(?)
-   // mysqli_stmt_bind_param($pst, 's',$data);
-    //run parameters inside database
+  
     mysqli_stmt_execute($pst);
 
     $result=mysqli_stmt_get_result($pst);
@@ -46,8 +33,14 @@ else{
            echo 'Log in Successfull';
            header("Location: ../pages/index.html?Signup=successful");
            exit();
+        }else{
+          
+            echo '<script>alert("Welcome to Geeks for Geeks")</script>';
+
+           header("Location: ../pages/login.html?Signup=unsuccessful");
+
+           exit();
         }
-        // echo $row['userFirstName']." ".$row['userLastName']."<br>";
 }
 }
 

@@ -1,32 +1,32 @@
 let data = [
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"},
-    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika", email: "bok@gmail.com", status: "Delete"}
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   },
+    {agencyId: 251, agency: "Bokwai", subAdmin: "Bokwainaika"   }
 ];
 
 let pasData = [
@@ -166,24 +166,19 @@ const populateAgencyTable =() => {
     th2.textContent = "Agency"
     let th3 = rowHeader.insertCell();
     th3.textContent = "Sub Admin"
-    let th4 = rowHeader.insertCell();
-    th4.textContent = "Email"
-    let th5 = rowHeader.insertCell();
-    th5.textContent = "Status"
+   
+
     rowHeader.className = "table-header";
     for(let agency of data){
         let row = table.insertRow();
         let cellOne = row.insertCell();
         let cellTwo = row.insertCell();
         let cellThree = row.insertCell();
-        let cellFour = row.insertCell();
-        let cellFive = row.insertCell();
-        cellFive.id ="cell-five";
+       
         cellOne.textContent = agency.agencyId
         cellTwo.textContent = agency.agency
         cellThree.textContent = agency.subAdmin
-        cellFour.textContent = agency.email
-        cellFive.textContent = agency.status
+        
     }
     agencyTable.append(table);
 }

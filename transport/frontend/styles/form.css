@@ -10,6 +10,15 @@ body{
 ::-webkit-scrollbar {
     display: none;
 }
+.form-group h2{
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin:auto;
+  /* text-align: center; */
+}
+
 
 .bg{
 background-image: url('https://www.sustainable-bus.com/wp-content/uploads/2019/12/scania-bus4.jpg');
@@ -26,7 +35,7 @@ background-image: url('https://www.sustainable-bus.com/wp-content/uploads/2019/1
 .form{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   /* margin-top: 15%; */
   /* margin-bottom: 15%; */
   width: 70%;
@@ -34,6 +43,7 @@ background-image: url('https://www.sustainable-bus.com/wp-content/uploads/2019/1
   margin-left: auto;
   margin-right: auto;
   margin-top: 10vh;
+  text-align: center;
   
   
 }
