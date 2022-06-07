@@ -46,6 +46,11 @@ else{
            echo 'Log in Successfull';
            header("Location: ../pages/index.html?Signup=successful");
            exit();
+        }else{
+          
+           header("Location: ../pages/login.html?Signup=unsuccessful");
+           echo 'Log in unsuccessfull';
+           exit();
         }
         // echo $row['userFirstName']." ".$row['userLastName']."<br>";
 }
