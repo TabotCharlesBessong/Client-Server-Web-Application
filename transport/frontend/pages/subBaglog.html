@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,25 +13,23 @@
 </head>
 <body onload="loader()">
     <div class="container">
-        <header class="header">
+<header class="header">
     <nav class="nav">
       <div class="nav-left">
         <h2 class="logo" >SupLex</h2>
       </div>
       <div class="nav-center">
         <ul class="nav-links" >
-          <li tabindex="1"> <a href="./index.html"> home </a> </li>
-          <li tabindex="1">create</li>
-          <li tabindex="1"> <a href="./assignBus.html">assign</a> </li>
-          <li tabindex="1">backlog</li>
-          <li> <a href="./createSubAdmin.html"> create sub-admin</a> </li>
-          <li> <a href="./assignBus.html">assign buses</a> </li>
-          <li> <a href="./backlog.html"> backlog </a> </li>
+          <li tabindex="1"> <a href="./subAdmin.html"> home </a> </li>
+          
+          <li> <a href="./mail.html">send mail</a> </li>
+          <li> <a href="./addNotification.html">add notification</a> </li>
+          <li> <a href="./subBaglog.html"> backlog </a> </li>
         </ul>
       </div>
       <div class="nav-right">
         <a href="./login.html">
-          <img src="../assets//avatar.jfif" alt="">
+          <img src="../assets/avatar.jfif" alt="">
           
         </a>
       </div>
@@ -40,27 +39,28 @@
             <h1>Backlog</h1>
         </div>
           <div class="backlog-content">
-            <div class="agency">
-                <div class="btn">
-                    <button id="btn-primary" onclick="hideTable()">Agencies</button>
-                </div>
-                <div class="agency-table" id="agencyTable">
-                   <!-- Insert Table Here from Javscript -->
-                </div>
-                <!-- <hr> -->
-            </div>
             <div class="passenger-info">
                 <div class="btn">
-                    <button id="btn-primary" onclick="hidePassenger()">Passenger Info</button>
+                    <button id="btn-primary" onclick="hidePassenger()">Mail History</button>
                 </div>
                 <div class="agency-table" id="pTable">
                    <!-- Insert Table Here from Javscript -->
                 </div>
                 <!-- <hr> -->
             </div>
+            <div class="agency">
+                <div class="btn">
+                    <button id="btn-primary" onclick="hideTable()">Passenger Info</button>
+                </div>
+                <div class="agency-table" id="agencyTable">
+                   <!-- Insert Table Here from Javscript -->
+                </div>
+                <!-- <hr> -->
+            </div>
+            
             <div class="journey-info">
                 <div class="btn">
-                    <button id="btn-primary" onclick="hideJourney()">Journey Info</button>
+                    <button id="btn-primary" onclick="hideJourney()">Bus Info</button>
                 </div>
                 <div class="agency-table" id="jTable">
                    <!-- Insert Table Here from Javscript -->
@@ -70,6 +70,6 @@
             </div>
           </div>
     </div>
-  <script src="../js/backlog.js"></script>
+  <script src="../js/subBacklog.js"></script>
 </body>
 </html>

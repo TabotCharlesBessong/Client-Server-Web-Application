@@ -7,23 +7,49 @@
   <title>Login Page</title>
   <link rel="stylesheet" href="../styles//form.css">
   <link rel="stylesheet" href="../styles/specialStyles.css">
+  <link rel="stylesheet" href="../styles/home.css">
 </head>
 <body class="bg bg-img" >
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-left">
+        <h2 class="logo" >SupLex</h2>
+      </div>
+      <div class="nav-center">
+        <ul class="nav-links" >
+          <li tabindex="1"> <a href="./index.html"> home </a> </li>
+          <li tabindex="1">create</li>
+          <li tabindex="1"> <a href="./assignBus.html">assign</a> </li>
+          <li tabindex="1">backlog</li>
+          <li> <a href="./createSubAdmin.html"> create sub-admin</a> </li>
+          <li> <a href="./assignBus.html">assign buses</a> </li>
+          <li> <a href="./backlog.html"> backlog </a> </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="./login.html">
+          <img src="../assets/avatar.jfif" alt="">
+          
+        </a>
+      </div>
+    </nav>
+  </header>
+
   <div class="form">
-    <form action="" class="form-group">
+    <form action="../PHP//login.php" class="form-group" method="POST">
       <div class="form-control">
         <label for="name">Name</label>
-        <input type="text" name="name" placeholder="admin name" >
+        <input type="text" name="name" placeholder="Admin name" >
       </div>
       <div class="form-control">
         <label for="password">Password</label>
-        <input type="password" name="password" placeholder="admin password" >
+        <input type="password" name="password" placeholder="Admin password" >
       </div>
       <a href="#">
         <h2>wrong login credentials</h2>
       </a>
       <div class="form-control">
-        <button class="btn lg-btn" type="submit" >login</button>
+        <button name="submit" class="btn lg-btn" type="submit" >login</button>
       </div>
     </form>
   </div>

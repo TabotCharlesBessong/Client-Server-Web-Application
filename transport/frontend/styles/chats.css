@@ -1,0 +1,65 @@
+
+.main-container{
+/*   
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6) inset ;
+  max-width: 100%;
+  width: 100vw;
+
+}
+
+#piechart,
+#histogram{
+  height: 100%;
+  width: 90%;
+}
+
+.chart{
+  height: 500px;
+  width: 100%;
+  width: 98%;
+  flex: 1;
+}
+
+.row{
+  background: #fff;
+  border-radius: 0.6rem;
+  /* margin: 0.4em;
+  padding: 0.6em;
+  border-radius: 0.6rem; */
+}
+
+.notifications{
+  /* flex: 1; */
+  color: red;
+  /* width: 200px; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  /* max-width: 30%; */
+}
+
+.chart {
+  text-align: center;
+  margin: auto;
+}
+
+.row {
+  margin-bottom: 150px;
+}
+.b{
+  color: #49A9EA;
+  color: #8718a3;
+  color: #67a812;
+  color: #2719aa;
+  color: #0f1113;
+  color: #ffa500;
+  color: #1e8391;
+}
