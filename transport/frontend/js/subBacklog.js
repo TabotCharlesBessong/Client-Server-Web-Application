@@ -1,4 +1,14 @@
 
+const busData = fetch("../PHP/SubBacklogarrayForBusinfo.php")
+.then(res => res.json())
+
+console.log(busData);
+// const data = re
+// const fetchBusData = ()=>{
+//     fetch('../')
+// }
+console.log(busData)
+
 const busInfo = [
     {busID:278,origin:'Buea',destination:'Yaounde',seats:34,status:'left'},
     {busID:278,origin:'Buea',destination:'Yaounde',seats:34,status:'loading'},
@@ -15,7 +25,7 @@ const busInfo = [
 ];
 
 let mailData = [
-    {mailID: 666, package:'Chair', Sname: "Tabot Charles",Rname: "I_Am_Anonymous", origin: "Kuwait", destination: "Dakar"},
+{mailID: 666, package:'Chair', Sname: "Tabot Charles",Rname: "I_Am_Anonymous", origin: "Kuwait", destination: "Dakar"},
     {mailID: 666, package:'Chair', Sname: "Tabot Charles",Rname: "I_Am_Anonymous", origin: "Kuwait", destination: "Dakar"},
     {mailID: 666, package:'Chair', Sname: "Tabot Charles",Rname: "I_Am_Anonymous", origin: "Kuwait", destination: "Dakar"},
     {mailID: 666, package:'Chair', Sname: "Tabot Charles",Rname: "I_Am_Anonymous", origin: "Kuwait", destination: "Dakar"},
