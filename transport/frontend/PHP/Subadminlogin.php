@@ -9,14 +9,14 @@
 
     if (empty($name) || empty($pwd)) {
         echo '<script>alert("Welcome to Geeks for Geeks")</script>';
-        header("Location: ../pages/login.html?Signup=empty");
+        header("Location: ../pages/subAdminlogin.html?Signup=empty");
         exit();
         }
         else{
 // $data = 'Bebongnchu';
 
 //Create a Template
-$sql= "SELECT * FROM admin ;";
+$sql= "SELECT * FROM subadmin ;";
 //Create a prepared Statement
 $pst=mysqli_stmt_init($conn);
 //Prepare the prepared statement
@@ -29,15 +29,15 @@ else{
 
     $result=mysqli_stmt_get_result($pst);
     while ($row=mysqli_fetch_assoc($result)) {
-        if ($name==$row['adminName'] && $pwd==$row['AdminPassword']) {
+        if ($name==$row['SubAdminName'] && $pwd==$row['subAdminPassword']) {
            echo 'Log in Successfull';
-           header("Location: ../pages/index.html?Signup=successful");
+           header("Location: ../pages/subAdmin.html?Signup=successful");
            exit();
         }else{
           
             echo '<script>alert("Welcome to Geeks for Geeks")</script>';
 
-           header("Location: ../pages/login.html?Signup=unsuccessful");
+           header("Location: ../pages/subAdminlogin.html?Signup=unsuccessful");
 
            exit();
         }
@@ -47,7 +47,7 @@ else{
         }
 }
 else{
-    header("Location: ../pages/login.html");
+    header("Location: ../pages/subAdminlogin.html");
 }
 
 ?>

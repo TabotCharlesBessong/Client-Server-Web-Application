@@ -1,4 +1,5 @@
 <?php
+include_once 'connection.php';
 
 	$sql= "SELECT LicenseNum,journey.origin,journey.destination,journey.passengerCount,journey.state FROM bus bus LEFT JOIN journey ON bus.LicenseNum = journey.busLiscence;";
 	$result=mysqli_query($conn,$sql);

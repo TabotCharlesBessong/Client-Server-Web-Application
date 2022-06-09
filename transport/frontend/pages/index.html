@@ -6,65 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../styles/home.css">
+  <link rel="stylesheet" href="../styles/welcome.css">
   <link rel="stylesheet" href="../styles/specialStyles.css">
-  <link rel="stylesheet" href="../styles//mediaQuery.css">
-  <link rel="stylesheet" href="../styles/chats.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <link rel="stylesheet" href="../font-awesome/font-awesome/css/all.min.css">
 </head>
 <body>
-  <header class="header">
-    <nav class="nav">
-      <div class="nav-left">
-        <h2 class="logo" >SupLex</h2>
+  <div class="welcome-container">
+    <div class="main">
+      <div class="text">
+        <h2>are you an admin or sub-admin</h2>
       </div>
-      <div class="nav-center">
-        <ul class="nav-links" >
-          <li tabindex="1"> <a href="./index.html"> home </a> </li>
-          
-          <li> <a href="./createSubAdmin.html"> create sub-admin</a> </li>
-          <li> <a href="./assignBus.html">assign buses</a> </li>
-          <li> <a href="./backlog.html"> backlog </a> </li>
-        </ul>
-      </div>
-      <div class="nav-right">
+      <div class="links">
         <a href="./login.html">
           <img src="../assets/avatar.jfif" alt="">
-          
+          <h2>continue as admin</h2>
+           
+        </a>
+        <a href="./subAdminLogin.html">
+          <img src="../assets/user.png" alt="">
+          <h2>continue as sub admin</h2>
+           
         </a>
       </div>
-    </nav>
-  </header>
-
-  <main class="main-container">
-    <!-- <div class="charts row"> -->
-      <div class="chart row col-6 pie">
-        <canvas id="piechart" width="400" height="400"></canvas>
-      </div>
-      <div class="chart row col-6 hist">
-        <canvas id="histogram" width="400" height="400"></canvas>
-      </div>
-      <div class="notifications ">
-      <ul>
-        <li class="notif"> <a href="#"> 
-          <i class="fab fa-facebook"></i> <p class="para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque cum voluptates iste! </p> 
-         </a> </li>
-        <li class="notif"> <a href="#"> 
-          <i class="fab fa-youtube"></i> <p class="para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque cum voluptates iste! </p> 
-         </a> </li>
-        <li class="notif"> <a href="#"> 
-          <i class="fab fa-google"></i> <p class="para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque cum voluptates iste! </p> 
-         </a> </li>
-        <li class="notif"> <a href="#"> 
-          <i class="fab fa-twitter"></i> <p class="para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque cum voluptates iste! </p> 
-         </a> </li>
-      </ul>
     </div>
-    <!-- </div> -->
-    
-  </main>
-  <script src="../js/charts.js"></script>
+  </div>
 </body>
 </html>
