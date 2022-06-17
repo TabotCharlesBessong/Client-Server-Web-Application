@@ -26,3 +26,7 @@ a{
   cursor: pointer;
   
 }
+
+.u{
+  text-transform: uppercase;
+}
