@@ -48,32 +48,31 @@
                       <th>agency id</th>
                       <th>agency name</th>
                       <th>sub-admin </th>
-                      <th>email address </th>
+                    
                     </tr>
-                    <tr>
-                      <td>312</td>
-                      <td>Musango</td>
-                      <td>Blaise</td>
-                      <td>blaise@gmail.com</td>
-                    </tr>
-                    <tr>
-                      <td>312</td>
-                      <td>Musango</td>
-                      <td>Blaise</td>
-                      <td>blaise@gmail.com</td>
-                    </tr>
-                    <tr>
-                      <td>312</td>
-                      <td>Musango</td>
-                      <td>Blaise</td>
-                      <td>blaise@gmail.com</td>
-                    </tr>
-                    <tr>
-                      <td>312</td>
-                      <td>Musango</td>
-                      <td>Blaise</td>
-                      <td>blaise@gmail.com</td>
-                    </tr>
+
+                    <?php
+
+                    include_once 'connection.php';
+
+$sql= "SELECT agencylocation.agencyId as 'Agency ID',agencylocation.agencyName as 'Agency',SubAdminName as 'Sub Admin' FROM subadmin subadmin LEFT JOIN agencylocation ON subadmin.agencyId = agencylocation.agencyId;";
+	$result=mysqli_query($conn,$sql);
+	$resultCheck=mysqli_num_rows($result);
+
+	if ($resultCheck>0) {
+		while ($row=mysqli_fetch_assoc($result)) {
+		//	echo $row['Agency']."<br>";
+
+      echo  "<tr>
+      <td>".$row["Agency ID"]."</td>
+      <td>".$row["Agency"]."</td>
+      <td>".$row["Sub Admin"]."</td>
+    </tr>";
+		}
+	}
+                  
+
+                    ?>
                     
                   </table>
                 </div>
@@ -93,30 +92,33 @@
                       <th>destination </th>
                       <th>bus number </th>
                     </tr>
-                    <tr>
-                      <td>417</td>
-                      <td>yimnai nerus</td>
-                      <td>lt34ws234j12</td>
-                      <td>buea</td>
-                      <td>nchang</td>
-                      <td>21</td>
-                    </tr>
-                    <tr>
-                      <td>417</td>
-                      <td>yimnai nerus</td>
-                      <td>lt34ws234j12</td>
-                      <td>buea</td>
-                      <td>nchang</td>
-                      <td>21</td>
-                    </tr>
-                    <tr>
-                      <td>417</td>
-                      <td>yimnai nerus</td>
-                      <td>lt34ws234j12</td>
-                      <td>buea</td>
-                      <td>nchang</td>
-                      <td>21</td>
-                    </tr>
+
+                    <?php
+
+include_once 'connection.php';
+
+$sql= "SELECT passenger.passengerID as 'Pas ID',passenger.passengerName as 'Name',passenger.National_ID_Number as 'ID Number',origin,destination,busLiscence as 'Bus Number' FROM journey journey LEFT JOIN passenger ON journey.journeyId = passenger.journeyId;";
+	$result=mysqli_query($conn,$sql);
+	$resultCheck=mysqli_num_rows($result);
+
+	if ($resultCheck>0) {
+		while ($row=mysqli_fetch_assoc($result)) {
+			//echo $row['Name']."<br>";
+
+      echo  "<tr>
+<td>".$row["Pas ID"]."</td>
+<td>".$row["Name"]."</td>
+<td>".$row["ID Number"]."</td>
+<td>".$row["origin"]."</td>
+<td>".$row["destination"]."</td>
+<td>".$row["Bus Number"]."</td>
+</tr>";
+
+		}
+	}
+
+
+?>
                     
                   </table>
                 </div>
@@ -134,30 +136,32 @@
                       <th>destination </th>
                       <th>number of Passenger </th>
                     </tr>
-                    <tr>
-                      <td>417</td>
-                      <td>douala</td>
-                      <td>nsangmelima</td>
-                      <td>23</td>
-                    </tr>
-                    <tr>
-                      <td>417</td>
-                      <td>douala</td>
-                      <td>nsangmelima</td>
-                      <td>23</td>
-                    </tr>
-                    <tr>
-                      <td>417</td>
-                      <td>douala</td>
-                      <td>nsangmelima</td>
-                      <td>23</td>
-                    </tr>
-                    <tr>
-                      <td>417</td>
-                      <td>douala</td>
-                      <td>nsangmelima</td>
-                      <td>23</td>
-                    </tr>
+
+                    <?php
+
+include_once 'connection.php';
+
+$sql= "SELECT LicenseNum,journey.origin,journey.destination,journey.passengerCount,journey.state FROM bus bus LEFT JOIN journey ON bus.LicenseNum = journey.busLiscence;";
+	$result=mysqli_query($conn,$sql);
+	$resultCheck=mysqli_num_rows($result);
+
+	if ($resultCheck>0) {
+		while ($row=mysqli_fetch_assoc($result)) {
+			//echo $row['origin']."<br>";
+
+      echo  "<tr>
+<td>".$row["LicenseNum"]."</td>
+<td>".$row["origin"]."</td>
+<td>".$row["destination"]."</td>
+<td>".$row["passengerCount"]."</td>
+</tr>";
+
+		}
+	}
+
+
+?>
+                  
                     
                   </table>
                 </div>
