@@ -35,22 +35,23 @@
             <div class="title">
                 <h1>Pay For Ticket</h1>
             </div>
-            <form method="../PHP/payment.php">
-                <input type="text" id="name" placeholder="@johndoe">
-                <select >
+            <form action="../PHP/payment.php" method="POST">
+                <input name="name" type="text" id="name" placeholder="@johndoe">
+                <select name="operator">
                     <option value="0">Select Operator</option>
                     <option value="1">MTN</option>
                     <option value="2">ORANGE</option>
                 </select>
-                <input type="text" id="telephone" placeholder="@telephone">
-                <input type="text" id="sid" placeholder="@id-card-num">
-                <input type="text" id="origin" placeholder="@origin" value="Buea">
-                <input type="text" id="destination" placeholder="@destination" value="Bamenda">
-                <input type="text" id="price" placeholder="@price">
-                <button onclick="ticketFiller()" id="pay-btn" type="button">Pay</button>
+                <input name="phone" type="text" id="telephone" placeholder="@telephone">
+                <input name="id" type="text" id="sid" placeholder="@id-card-num">
+                <input name="origin" type="text" id="origin" placeholder="@origin" value="Buea">
+                <input name="dest" type="text" id="destination" placeholder="@destination" value="Bamenda">
+                <input name="price" type="text" id="price" placeholder="@price" value="5000">
+                <button name="submit" id="pay-btn" type="submit">Pay</button>
             </form>
+            
         </div>
     </div>
 </body>
-<script src="../js/dropdown.js"></script>
+<!--script src="../js/dropdown.js"></script  onclick="ticketFiller()"-->
 </html>

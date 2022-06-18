@@ -74,6 +74,9 @@ let availableJourneys = [
 
 let jSection = document.getElementById('journeys')
 
+let myFrom = ['Buea', 'Douala', 'Kumba']
+let myTo = ['Yaounde', 'Bamenda', 'Dschang']
+
 const populator = () => {
     for(let journey of availableJourneys){
         let mainChild = document.createElement('div')
@@ -89,9 +92,9 @@ const populator = () => {
         let content = document.createElement('div')
         content.className = 'content'
         let from = document.createElement('h3')
-        from.textContent = `From: ${journey.origin}`
+        from.textContent = `From: ${myFrom[Math.floor(Math.random() * 3)]}`
         let to = document.createElement('h3')
-        to.textContent = `To: ${journey.destination}`
+        to.textContent = `To: ${myTo[Math.floor(Math.random() * 3)]}`
         let price = document.createElement('h3')
         price.textContent = `Price: ${journey.price}`
         content.appendChild(from)
@@ -101,9 +104,9 @@ const populator = () => {
         bottom.className = 'bottom'
         btn = document.createElement('button')
         btn.addEventListener('click', function(){
-           // window.location.href = '../documents/seat-selection.html'
+            window.location.href = '../documents/seat-selection.html'
 
-           window.location.href = 'http://127.0.0.1:5500/transport/client/documents/seat-selection.html'
+          // window.location.href = 'http://127.0.0.1:5501/transport/client/documents/seat-selection.html'
         })
         btn.textContent = 'BOOK'
         bottom.appendChild(btn)

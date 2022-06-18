@@ -93,6 +93,7 @@ let originHolder = document.getElementById('originHolder')
 let destinationHolder = document.getElementById('destinationHolder')
 let priceHolder = document.createElement('priceHolder')
 
+
 function ticketFiller(){
     let nameLabel = document.createElement('h1')
     let sidLabel = document.createElement('h1')
@@ -138,10 +139,8 @@ function ticketFiller(){
         ticket.appendChild(destinationHolder)
         ticket.appendChild(priceHolder)
     })
-    payBtn = document.getElementById('pay-btn')
-    payBtn.addEventListener('click', function(){
-        window.location = 'http://127.0.0.1:5500/transport/client/documents/ticket.html'
-    })
+    window.location.href = '../documents/ticket.php'
+   
     console.log('This is the ticket: ', ticket);
 }
 
