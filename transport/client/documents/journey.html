@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="../styles/home.css">
     <link rel="stylesheet" type="text/css" href="../styles/mediaquery.css">
 </head>
-<body>
+<body onload="populator()">
     <div class="container">
         <div class="navbar">
             <div class="brand">
@@ -16,8 +16,8 @@
             </div>
             <div class="air"></div>
             <div class="menu">
-                <a href="./homepage.html" class="menu-item">Home</a>
-                <a href="./index.html" class="menu-item">Journeys</a>
+                <a href="./index.html" class="menu-item">Home</a>
+                <a href="./journey.html" class="menu-item">Journeys</a>
                 <a href="#" onclick="showDropdownMenu()" class="hamburger">
                     <i class="fa-solid fa-bars"></i>
                 </a>
@@ -25,18 +25,14 @@
                     <a href="#" onclick="closeDropdownMenu()">
                         <i class="fa-solid fa-x"></i>
                     </a>
-                    <a href="./homepage.html">Home</a>
-                    <a href="./index.html">Journeys</a>
+                    <a href="./index.html">Home</a>
+                    <a href="./journey.html">Journeys</a>
                 </div>
             </div>
         </div>
-        <div class="main-content">
-            <div class="text-content">
-                <h1>Welcome to SupLex, your number one booking service</h1>
-                <h3>Click below in order to view available journeys</h3>
-                <button><a href="./index.html">Go to journeys</a></button>
-            </div>
-        </div>  
+        <div id="journeys" class="main">
+
+        </div>
         <div class="footer">
             <h1>SupLex</h1>
             <footer>
@@ -61,6 +57,8 @@
             </footer>
         </div>
     </div>
+    <script src="../js/populate.js"></script>
+    <script src="../js/dropdown.js"></script>
     <script src="https://kit.fontawesome.com/b849139045.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -21,8 +21,8 @@
         <ul class="nav-links" >
           <li tabindex="1"> <a href="./AdminHomepage.html"> home </a> </li>
           <li> <a href="./createSubAdmin.html"> create sub-admin</a> </li>
-          <li> <a href="./assignBus.html">assign buses</a> </li>
-          <li> <a href="./backlog.html"> backlog </a> </li>
+          <li> <a href="./assignBus.php">assign buses</a> </li>
+          <li> <a href="./backlog.php"> backlog </a> </li>
         </ul>
       </div>
       <div class="nav-right">
@@ -35,7 +35,10 @@
   </header>
   <div class="form">
     <form action="../PHP/createSubadmin.php" class="form-group" method="POST">
-      <div class="form-control">
+      
+    
+      <!-- <div class="form-control"> -->
+        <div class="form-control">
         <label for="sub-admin">Sub Admin</label>
         <input type="text" name="sub-admin" placeholder="admin sub-admin" >
       </div>
@@ -47,13 +50,10 @@
         <label for="agency">Agency</label>
         <input type="password" name="agency" placeholder=" agency" >
       </div>
-    
-      <div class="form-control">
-<<<<<<< HEAD
         <button class="btn lg-btn" type="submit" >create sub-admin</button>
-=======
-        <button name="submit" class="btn lg-btn" type="submit" >create agency</button>
->>>>>>> bc07866d2c6b11f70f4c7d631754538fdd1e4fc9
+
+        <!-- <button name="submit" class="btn lg-btn" type="submit" >create agency</button> -->
+
       </div>
     </form>
   </div>

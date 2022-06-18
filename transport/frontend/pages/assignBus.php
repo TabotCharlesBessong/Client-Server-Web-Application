@@ -14,7 +14,7 @@
     <header class="header">
     <nav class="nav">
       <div class="nav-left">
-        <h2 class="logo" >SupLex</h2>
+        <h2 class="logo" ><a href="./index.html">SupLex</a>  </h2>
       </div>
       <div class="nav-center">
         <ul class="nav-links" >
@@ -23,8 +23,8 @@
         
           
           <li> <a href="./createSubAdmin.html"> create sub-admin</a> </li>
-          <li> <a href="./assignBus.html">assign buses</a> </li>
-          <li> <a href="./backlog.html"> backlog </a> </li>
+          <li> <a href="./assignBus.php">assign buses</a> </li>
+          <li> <a href="./backlog.php"> backlog </a> </li>
         </ul>
       </div>
       <div class="nav-right">
@@ -37,29 +37,52 @@
   </header>
   <div class="form">
 
-    <form action="" class="form-group">
+    <form method="POST" action="../PHP/assignBus.php" class="form-group">
       
       <div class="form-control">
         <label for="agency">Branch</label>
         <select name="agency" id="agencies">
-          <option value="agency1">branch1</option>
-          <option value="agency2">branch2</option>
-          <option value="agency3">branch3</option>
-          <option value="agency4">branch4</option>
-        </select>
+        <?php
+
+include_once 'connection.php';
+$sql= "SELECT * FROM agencylocation;";
+$result=mysqli_query($conn,$sql);
+$resultCheck=mysqli_num_rows($result);
+
+if ($resultCheck>0) {
+  while ($row=mysqli_fetch_assoc($result)) {
+
+        echo "<option value='agency'>".$row["agencyName"]."</option>";
+  }}
+
+        ?>
+
+</select>
       </div>
       <div class="form-control">
         <label for="agency">Select Bus</label>
         <select name="bus" id="agencies">
-          <option value="bus1">bus1</option>
-          <option value="bus2">bus2</option>
-          <option value="bus3">bus3</option>
-          <option value="bus4">bus4</option>
+          
+          <?php
+include_once 'connection.php';
+
+$sql= "SELECT * FROM bus;";
+$result=mysqli_query($conn,$sql);
+$resultCheck=mysqli_num_rows($result);
+
+if ($resultCheck>0) {
+  while ($row=mysqli_fetch_assoc($result)) {
+
+        echo "<option value='bus'>".$row["LicenseNum"]."</option>";
+  }}
+
+        ?>
+  
         </select>
       </div>
     
       <div class="form-control">
-        <button class="btn lg-btn" type="submit" >create agency</button>
+        <button name="submit" class="btn lg-btn" type="submit" >create agency</button>
       </div>
     </form>
   </div>

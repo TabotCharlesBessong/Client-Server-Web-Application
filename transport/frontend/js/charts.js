@@ -46,7 +46,7 @@ let hist = new Chart(stats, {
   },
   options:{
     title:{
-      text:"This is the sales statistics for the tickets",
+      text:"This is the sales statistics for the tickets per month",
       display:true
     },
     legend:{

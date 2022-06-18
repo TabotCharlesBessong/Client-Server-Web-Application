@@ -14,7 +14,7 @@
   <header class="header">
     <nav class="nav">
       <div class="nav-left">
-        <h2 class="logo" >SupLex</h2>
+        <h2 class="logo" > <a href="./index.html">SupLex</a> </h2>
       </div>
       <div class="nav-center">
         <ul class="nav-links" >
@@ -22,7 +22,7 @@
           
           <li> <a href="./mail.html">send mail</a> </li>
           <li> <a href="./addNotification.html">add notification</a> </li>
-          <li> <a href="./subBaglog.html"> backlog </a> </li>
+          <li> <a href="./subBaglog.php"> backlog </a> </li>
         </ul>
       </div>
       <div class="nav-right">
@@ -35,7 +35,7 @@
   </header>
 
   <div class="form">
-    <form action="" class="form-group">
+    <form method="POST" action="../PHP/mail.php" class="form-group">
       <div class="form-control">
         <label for="sender">sender</label>
         <input type="text" name="sender" placeholder="" >
@@ -61,7 +61,7 @@
       
       
       <div class="form-control">
-        <button class="btn lg-btn" type="submit" >send mail</button>
+        <button name="submit" class="btn lg-btn" type="submit" >send mail</button>
       </div>
     </form>
   </div>
