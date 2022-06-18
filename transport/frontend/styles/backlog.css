@@ -28,7 +28,7 @@ body{
     cursor: pointer;
 }
 
-.suplex th , .suplex tr{
+.suplex th , .suplex td {
     text-transform: capitalize;
     font-size: 1.4rem;
 }
@@ -48,4 +48,21 @@ body{
   text-align: left;
   background-color: #04AA6D;
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .suplex tr td{
+        font-size: 0.8rem;
+    }
+
+    .suplex td , .suplex th{
+        padding: 0;
+
+    }
+    .suplex tr{
+        padding: 0;
+    }
+    .suplex th {
+        font-size: 1rem;
+    } 
 }

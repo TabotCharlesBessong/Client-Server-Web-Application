@@ -278,3 +278,6 @@ const loader = () => {
     populatePassengerTable();
     populateJourneyTable();
 }
+
+const btns = document.querySelectorAll('.btn-primary')
+const backlog = document.querySelector('.backlog-content')
