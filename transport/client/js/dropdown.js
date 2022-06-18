@@ -106,7 +106,6 @@ function ticketFiller(){
     let origin = document.createElement('h1')
     let destination = document.createElement('h1')
     let price = document.createElement('h1')
-
     nameLabel.textContent = 'Name'
     sidLabel.textContent = 'Id Number'
     seatLabel.textContent = 'Seat Num'
@@ -119,29 +118,30 @@ function ticketFiller(){
     origin.textContent = Torigin.textContent
     destination.textContent = Tdestination.textContent
     price.textContent = Tprice.textContent
-    nameHolder.append(nameLabel)
-    nameHolder.append(Oname)
-    sidHolder.append(sidLabel)
-    sidHolder.append(sid)
-    seatNumHolder.append(seatLabel)
-    seatNumHolder.append(seat)
-    originHolder.append(originLabel)
-    originHolder.append(origin)
-    destinationHolder.append(destinationLabel)
-    destinationHolder.append(destination)
-    priceHolder.append(priceLabel)
-    priceHolder.append(price)
-    console.log(nameHolder);
-    ticket.appendChild(nameHolder)
-    ticket.appendChild(sidHolder)
-    ticket.appendChild(seatHolder)
-    ticket.appendChild(originHolder)
-    ticket.appendChild(destinationHolder)
-    ticket.appendChild(priceHolder)
-    console.log(seatNum);
-    console.log(seatCount * seatPrice);
+    document.body.addEventListener('load', ()=>{
+        nameHolder.append(nameLabel)
+        nameHolder.append(Oname)
+        sidHolder.append(sidLabel)
+        sidHolder.append(sid)
+        seatNumHolder.append(seatLabel)
+        seatNumHolder.append(seat)
+        originHolder.append(originLabel)
+        originHolder.append(origin)
+        destinationHolder.append(destinationLabel)
+        destinationHolder.append(destination)
+        priceHolder.append(priceLabel)
+        priceHolder.append(price)
+        ticket.appendChild(nameHolder)
+        ticket.appendChild(sidHolder)
+        ticket.appendChild(seatHolder)
+        ticket.appendChild(originHolder)
+        ticket.appendChild(destinationHolder)
+        ticket.appendChild(priceHolder)
+    })
     payBtn = document.getElementById('pay-btn')
     payBtn.addEventListener('click', function(){
         window.location = 'http://127.0.0.1:5500/transport/client/documents/ticket.html'
     })
+    console.log('This is the ticket: ', ticket);
 }
+
