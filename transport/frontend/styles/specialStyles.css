@@ -9,6 +9,11 @@ a{
   color: green;
 }
 
+a:hover{
+  color:green ;
+  text-decoration: none;
+}
+
 .btn{
   padding: 0.2rem 1.5rem;
   text-transform: capitalize;
