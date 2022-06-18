@@ -55,7 +55,7 @@
 
                     include_once 'connection.php';
 
-$sql= "SELECT agencylocation.agencyId as 'Agency ID',agencylocation.agencyName as 'Agency',SubAdminName as 'Sub Admin' FROM subadmin subadmin LEFT JOIN agencylocation ON subadmin.agencyId = agencylocation.agencyId;";
+$sql= "SELECT agencylocation.agencyId as 'Agency ID',agencylocation.agencyName as 'Agency',SubAdminName as 'Sub Admin' FROM subadmin subadmin inner JOIN agencylocation ON subadmin.agencyId = agencylocation.agencyId;";
 	$result=mysqli_query($conn,$sql);
 	$resultCheck=mysqli_num_rows($result);
 
@@ -97,7 +97,7 @@ $sql= "SELECT agencylocation.agencyId as 'Agency ID',agencylocation.agencyName a
 
 include_once 'connection.php';
 
-$sql= "SELECT passenger.passengerID as 'Pas ID',passenger.passengerName as 'Name',passenger.National_ID_Number as 'ID Number',origin,destination,busLiscence as 'Bus Number' FROM journey journey LEFT JOIN passenger ON journey.journeyId = passenger.journeyId;";
+$sql= "SELECT passenger.passengerID as 'Pas ID',passenger.passengerName as 'Name',passenger.National_ID_Number as 'ID Number',origin,destination,busLiscence as 'Bus Number' FROM journey journey inner JOIN passenger ON journey.journeyId = passenger.journeyId;";
 	$result=mysqli_query($conn,$sql);
 	$resultCheck=mysqli_num_rows($result);
 
@@ -141,7 +141,7 @@ $sql= "SELECT passenger.passengerID as 'Pas ID',passenger.passengerName as 'Name
 
 include_once 'connection.php';
 
-$sql= "SELECT LicenseNum,journey.origin,journey.destination,journey.passengerCount,journey.state FROM bus bus LEFT JOIN journey ON bus.LicenseNum = journey.busLiscence;";
+$sql= "SELECT LicenseNum,journey.origin,journey.destination,journey.passengerCount,journey.state FROM bus bus inner JOIN journey ON bus.LicenseNum = journey.busLiscence;";
 	$result=mysqli_query($conn,$sql);
 	$resultCheck=mysqli_num_rows($result);
 
