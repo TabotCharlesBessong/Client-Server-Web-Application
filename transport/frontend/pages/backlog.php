@@ -21,7 +21,7 @@
         <ul class="nav-links" >
           <li tabindex="1"> <a href="./AdminHomepage.html"> home </a> </li>
           <li> <a href="./createSubAdmin.html"> create sub-admin</a> </li>
-          <li> <a href="./assignBus.html">assign buses</a> </li>
+          <li> <a href="./assignBus.php">assign buses</a> </li>
           <li> <a href="./backlog.html"> backlog </a> </li>
         </ul>
       </div>
