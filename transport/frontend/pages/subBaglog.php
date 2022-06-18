@@ -54,46 +54,42 @@
                       <th>origin </th>
                       <th>destination </th>
                     </tr>
-                    <tr>
-                      <td>312</td>
-                      <td>laptop</td>
-                      <td>monick</td>
-                      <td>Yannick</td>
-                      <td>buea</td>
-                      <td>douala</td>
-                    </tr>
-                    <tr>
-                      <td>312</td>
-                      <td>laptop</td>
-                      <td>monick</td>
-                      <td>Yannick</td>
-                      <td>buea</td>
-                      <td>douala</td>
-                    </tr>
-                    <tr>
-                      <td>312</td>
-                      <td>laptop</td>
-                      <td>monick</td>
-                      <td>Yannick</td>
-                      <td>buea</td>
-                      <td>douala</td>
-                    </tr>
-                    <tr>
-                      <td>312</td>
-                      <td>laptop</td>
-                      <td>monick</td>
-                      <td>Yannick</td>
-                      <td>buea</td>
-                      <td>douala</td>
-                    </tr>
+
+                    <?php
+
+include_once 'connection.php';
+
+$sql= "SELECT * FROM mail;";
+	$result=mysqli_query($conn,$sql);
+	$resultCheck=mysqli_num_rows($result);
+
+	if ($resultCheck>0) {
+		while ($row=mysqli_fetch_assoc($result)) {
+		//	echo $row['mailId']."<br>";
+
+      echo  "<tr>
+<td>".$row["mailId"]."</td>
+<td>".$row["Package_description"]."</td>
+<td>".$row["senderName"]."</td>
+<td>".$row["recieverName"]."</td>
+<td>".$row["origin"]."</td>
+<td>".$row["destination"]."</td>
+</tr>";
+
+		}
+	}
+
+
+?>
                     
+
                   </table>
                 </div>
                 <!-- <hr> -->
             </div>
             <div class="agency">
                 <div class="btn">
-                    <button id="btn-primary" onclick="hideTable()">Passenger Info</button>
+                <!--    <button id="btn-primary" onclick="hideTable()">Passenger Info</button>-->
                 </div>
                 <div class="agency-table" id="agencyTable">
                    <!-- Insert Table Here from Javscript -->
@@ -114,30 +110,32 @@
                       <th>origin </th>
                       <th>destination </th>
                     </tr>
-                    <tr>
-                      <td>312</td>
-                      <td>70</td>
-                      <td>buea</td>
-                      <td>douala</td>
-                    </tr>
-                    <tr>
-                      <td>312</td>
-                      <td>70</td>
-                      <td>buea</td>
-                      <td>douala</td>
-                    </tr>
-                    <tr>
-                      <td>312</td>
-                      <td>70</td>
-                      <td>buea</td>
-                      <td>douala</td>
-                    </tr>
-                    <tr>
-                      <td>312</td>
-                      <td>70</td>
-                      <td>buea</td>
-                      <td>douala</td>
-                    </tr>
+
+                    <?php
+
+include_once 'connection.php';
+
+$sql= "SELECT LicenseNum,capacity,journey.origin,journey.destination,journey.passengerCount,journey.state FROM bus bus LEFT JOIN journey ON bus.LicenseNum = journey.busLiscence;";
+	$result=mysqli_query($conn,$sql);
+	$resultCheck=mysqli_num_rows($result);
+
+	if ($resultCheck>0) {
+		while ($row=mysqli_fetch_assoc($result)) {
+			//echo $row['origin']."<br>";
+
+      echo  "<tr>
+<td>".$row["LicenseNum"]."</td>
+<td>".$row["capacity"]."</td>
+<td>".$row["origin"]."</td>
+<td>".$row["destination"]."</td>
+</tr>";
+
+		}
+	}
+
+
+?>
+                  
                     
                   </table>
                    
