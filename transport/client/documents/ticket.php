@@ -16,22 +16,22 @@
             session_start();
            // include_once '../PHP/payment.php';
             echo "<div id='nameHolder'>
-                <h1>". $_SESSION['name']."</h1>
+                <h1>Passenger Name:   ". $_SESSION['name']."</h1>
             </div>
             <div id='sidHolder'>
-            <h1>".$_SESSION['id']."</h1>
+            <h1>ID Number:  ".$_SESSION['id']."</h1>
             </div>
             <div id='seatHolder'>
-            <h1>". $_SESSION['phone']."</h1>
+            <h1>Seat:   ".$_SESSION['num']."</h1>
             </div>
             <div id='originHolder'>
-            <h1>".$_SESSION['origin']."</h1>
+            <h1>Origin: ".$_SESSION['origin']."</h1>
             </div>
             <div id='destinationHolder'>
-            <h1>".$_SESSION['dest']."</h1>
+            <h1>Destination:    ".$_SESSION['dest']."</h1>
             </div>
             <div id='priceHolder'>
-            <h1>". $_SESSION['price']."</h1>
+            <h1>Price:  ". $_SESSION['price']."</h1>
             </div>";
 
             ?>

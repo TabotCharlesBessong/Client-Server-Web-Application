@@ -4,7 +4,7 @@
 
 session_start();
    // include_once 'connection.php';
-$num=rand(10,100);
+   $_SESSION['num']=rand(1,20);
     $_SESSION['operator'] = $_POST['operator'];
     $_SESSION['phone']=  $_POST['phone'];
     $_SESSION['id']=  $_POST['id'];
