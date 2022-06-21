@@ -19,9 +19,7 @@
       <div class="nav-center">
         <ul class="nav-links" >
           <li tabindex="1"> <a href="./AdminHomepage.html"> home </a> </li>
-        
-        
-          
+      
           <li> <a href="./createSubAdmin.html"> create sub-admin</a> </li>
           <li> <a href="./assignBus.php">assign buses</a> </li>
           <li> <a href="./backlog.php"> backlog </a> </li>
@@ -37,11 +35,14 @@
   </header>
   <div class="form">
 
+  
+
     <form method="POST" action="../PHP/assignBus.php" class="form-group">
       
       <div class="form-control">
-        <label for="agency">Branch</label>
+        <label for="agency">Agency</label>
         <select name="agency" id="agencies">
+
         <?php
 
 include_once 'connection.php';
@@ -52,7 +53,7 @@ $resultCheck=mysqli_num_rows($result);
 if ($resultCheck>0) {
   while ($row=mysqli_fetch_assoc($result)) {
 
-        echo "<option value='agency'>".$row["agencyName"]."</option>";
+        echo "<option>".$row["agencyName"]."</option>";
   }}
 
         ?>
@@ -73,7 +74,7 @@ $resultCheck=mysqli_num_rows($result);
 if ($resultCheck>0) {
   while ($row=mysqli_fetch_assoc($result)) {
 
-        echo "<option value='bus'>".$row["LicenseNum"]."</option>";
+        echo "<option >".$row["LicenseNum"]."</option>";
   }}
 
         ?>
@@ -82,7 +83,7 @@ if ($resultCheck>0) {
       </div>
     
       <div class="form-control">
-        <button name="submit" class="btn lg-btn" type="submit" >create agency</button>
+        <button name="submit" class="btn lg-btn" type="submit" >Assign Bus</button>
       </div>
     </form>
   </div>
